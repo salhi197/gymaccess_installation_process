@@ -1,0 +1,14 @@
+# MyGym Installer - build requirements
+#
+# The installer itself uses ONLY the Python standard library
+# (tkinter, subprocess, zipfile, winreg, ctypes, pathlib, urllib, ...).
+# The single package below is required only to BUILD the standalone .exe.
+#
+# Install with:
+#     python -m pip install -r requirements.txt
+#
+# Build with:
+#     python -m PyInstaller --onefile --windowed --uac-admin \
+#         --name MyGymInstaller --clean installer.py
+
+pyinstaller>=6.0,<7.0
