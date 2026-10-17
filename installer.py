@@ -1129,7 +1129,7 @@ class InstallerApp(tk.Tk):
 # -------------------------------------------------------------------
 def main():
     if os.name != "nt":
-        print("MyGym Installer only runs on Windows.")
+        print("GymAccess Installer only runs on Windows.")
         sys.exit(1)
 
     if not is_admin():

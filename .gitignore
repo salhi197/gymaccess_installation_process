@@ -1,0 +1,63 @@
+# ============================================================
+#  MyGym Installer - .gitignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- PyInstaller ----------
+build/
+dist/
+*.spec
+!installer.spec
+
+# ---------- Installer build output ----------
+MyGymInstaller.exe
+MyGymInstaller
+*.exe
+*.dll
+*.pdb
+
+# ---------- Distribution payload (client binaries) ----------
+# These are large and should NOT live in git.
+# Ship them alongside the built EXE at distribution time.
+wampserver*.exe
+mygym*.zip
+mygym*.sql
+payload/
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ---------- OS ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------- Logs / temp ----------
+*.log
+*.tmp
+install-temp/
+logs/
